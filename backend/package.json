@@ -1,18 +1,20 @@
 {
-  "name": "curd-app-with-mern",
+  "name": "index.js",
   "version": "1.0.0",
   "description": "CURD app using mongDB, Express, ReactJs, and Node",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev" : "nodemon index.js",
-    "start": "index.js"
+    "dev": "nodemon index.js",
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.4.7",
     "express": "^4.21.2",
+    "mongoose": "^8.8.4",
     "nodemon": "^3.1.7"
   }
 }

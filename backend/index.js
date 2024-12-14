@@ -1,10 +1,11 @@
 import express from "express";
 import { router } from "./routers/users.js";
 import { dbConnect } from "./mongoDB/connecetDB.js";
+import "dotenv/config";
 const app = express();
 app.use(express.json());
 
-const PORT = 4000;
+const PORT = process.env.LOCAL_PORT;
 
 try {
   app.get("/", (req, res) => res.send("curd is running"));

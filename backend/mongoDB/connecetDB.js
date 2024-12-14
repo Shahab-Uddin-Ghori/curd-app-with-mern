@@ -7,8 +7,7 @@ export async function dbConnect() {
   //   return;
   // }
 
-  await mongoose
-    .connect(process.env.MONGODB_URI)
+  await mongoose.connect(process.env.MONGODB_URI)
     .then(() => console.log("mongoDB is connected"))
     .catch((error) => console.log(error));
 }

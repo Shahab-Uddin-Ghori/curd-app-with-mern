@@ -10,8 +10,8 @@ const PORT = process.env.LOCAL_PORT;
 try {
   app.get("/", (req, res) => res.send("curd is running"));
   app.listen(PORT, () => console.log("backend is running"), PORT);
-  app.use("/user", router);
   dbConnect();
+  app.use("/user", router);
 } catch (error) {
   console.log("🚀 ~ error:", error.message);
 }

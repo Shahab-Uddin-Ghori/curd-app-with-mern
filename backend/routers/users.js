@@ -23,7 +23,7 @@ router.put("/:id", async (req, res) => {
     const { id } = req.params;
     const userObj = req.body;
     const updateUser = await userModal.findByIdAndUpdate(id, userObj);
-    updateUser.save();
+    await updateUser.save();
     res.json({
       status: 200,
       message: "user update sucessfully",

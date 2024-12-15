@@ -1,4 +1,0 @@
-# MONGODB_URI = "mongodb+srv://shahab:shahab0321@cluster.yu679.mongodb.net/curd"
-
-MONGODB_URI = "mongodb://shahab:shahab0321@cluster-shard-00-00.yu679.mongodb.net:27017,cluster-shard-00-01.yu679.mongodb.net:27017,cluster-shard-00-02.yu679.mongodb.net/curd?replicaSet=atlas-12dzda-shard-0&ssl=true&authSource=admin"
-
